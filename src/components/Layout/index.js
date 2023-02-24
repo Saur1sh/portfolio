@@ -4,17 +4,18 @@ import './index.scss'
 
 const Layout = () => {
   return (
-    <Sidebar />
-    // <div className="App">
-    //   <div className="" page>
-    //     <span className="tags top-tags">&lt;body&gt;</span>
-    //     <Outlet />
-    //     <span className="tags bottom-tags"></span>
-    //     &lt;/body&gt;
-    //     <br />
-    //     <span className="bottom-tag-html">&lt;/html&gt;</span>
-    //   </div>
-    // </div>
+    <div className="App">
+      <Sidebar />
+      <div className="page">
+        {/* <span className="tags top-tags">&lt;body&gt;</span> */}
+        <Outlet />
+        {/* <span className="tags bottom-tag">
+          &lt;/body&gt;
+          <br /> <br></br>
+        </span> */}
+        {/* <span className="tags bottom-tag-html">&lt;/html&gt;</span> */}
+      </div>
+    </div>
   )
 }
 

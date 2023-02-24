@@ -1,8 +1,9 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import bitmoji from '../../assets/images/bit.jpg'
+import bitmoji from '../../assets/images/bit.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -30,6 +31,28 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faEnvelope} color="#95C4B4" />
       </NavLink>
     </nav>
+    <ul>
+      <li>
+        <a
+          target="_blank"
+          className="linkedin-icon"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/saur1sh/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="whitesmoke" />
+        </a>
+      </li>
+      <li>
+        <a
+          className="github-icon"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Saur1sh"
+        >
+          <FontAwesomeIcon icon={faGithub} color="whitesmoke" />
+        </a>
+      </li>
+    </ul>
   </div>
 )
 
